@@ -8,6 +8,29 @@ def pattern(lines):
             print(n,end="")
             n+=1
         for j in range(1,i):
-            print(n,end='')
+            print(n-2,end='')
             n-=1
         print()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
