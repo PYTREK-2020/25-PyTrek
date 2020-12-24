@@ -30,6 +30,12 @@ def computer():
         data[7] = 'O'
     elif (data[6] == data[7] == 'X' or data[5] == data[2] == 'X' or data[0] == data[4] == 'X') and (data[8] == ' '):
         data[8] = 'O'
+    elif data[4] == 'X':
+        for i in [0, 2, 6, 8]:
+            if data[i] == ' ':
+                data[i]='O'
+    elif data[0] == 'X' or data[2] == 'X' or data[6] == 'X' or data[8] == 'X':
+        data[4] = 'O'
     else:
         for i in range(0, 9):
             if data[i] == ' ':
