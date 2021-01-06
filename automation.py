@@ -60,8 +60,8 @@ if __name__ == '__main__':
             webbrowser.open('google.com')
         elif 'open code' in query:
             os.startfile('C:\\Users\\SAMSUNG\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe')
-        # elif 'close' or 'exit' in query:
-        #     break
+        elif 'close' or 'exit' in query:
+            break
 
 
 
