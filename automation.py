@@ -37,17 +37,16 @@ def recogniser():
 
     except Exception as exp:
         print(exp)
-        print('say again')
-        return 0
+        print('say again!!! \n \n')
+        return 'None'
     return data
 
 
 if __name__ == '__main__':
-
+    greeting()
     speak(' how are you ')
     while True:
         query = recogniser().lower()
-        # print(query)
         if 'wikipedia' in query:
             speak('searching wikipedia')
             query = query.replace('wikipedia', '')
@@ -61,8 +60,8 @@ if __name__ == '__main__':
             webbrowser.open('google.com')
         elif 'open code' in query:
             os.startfile('C:\\Users\\SAMSUNG\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe')
-        elif 'close' or 'exit' in query:
-            break
+        # elif 'close' or 'exit' in query:
+        #     break
 
 
 
